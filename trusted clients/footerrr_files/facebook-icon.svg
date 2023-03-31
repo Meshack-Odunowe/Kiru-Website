@@ -1,0 +1,41 @@
+<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.65 0.15625C4.73003 0.15625 3.84774 0.521706 3.19722 1.17222C2.54671 1.82274 2.18125 2.70503 2.18125 3.625V5.55625H0.325C0.232 5.55625 0.15625 5.63125 0.15625 5.725V8.275C0.15625 8.368 0.23125 8.44375 0.325 8.44375H2.18125V13.675C2.18125 13.768 2.25625 13.8438 2.35 13.8438H4.9C4.993 13.8438 5.06875 13.7687 5.06875 13.675V8.44375H6.9415C7.01875 8.44375 7.08625 8.39125 7.105 8.31625L7.7425 5.76625C7.74877 5.74137 7.74929 5.71538 7.74401 5.69027C7.73872 5.66516 7.72779 5.64158 7.71202 5.62133C7.69626 5.60108 7.67608 5.5847 7.65303 5.57342C7.62998 5.56214 7.60466 5.55627 7.579 5.55625H5.06875V3.625C5.06875 3.54867 5.08378 3.47309 5.113 3.40257C5.14221 3.33204 5.18502 3.26797 5.23899 3.21399C5.29297 3.16002 5.35704 3.11721 5.42757 3.088C5.49809 3.05878 5.57367 3.04375 5.65 3.04375H7.6C7.693 3.04375 7.76875 2.96875 7.76875 2.875V0.325C7.76875 0.232 7.69375 0.15625 7.6 0.15625H5.65Z" fill="#FCFCFC"/>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

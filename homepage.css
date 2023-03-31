@@ -1,0 +1,119 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+
+  /* height: 28rem;
+  width: 25rem; */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #000;
+  text-decoration: none;
+}
+.flex-me {
+  display: flex;
+  gap: 1.6rem;
+  /* width: 30rem; */
+  padding: 1.5rem;
+}
+.dropdown-details1 {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 153.5%;
+  letter-spacing: -0.02em;
+  color: #04111d;
+}
+.flex-image {
+  align-self: flex-start;
+  padding-top: 1.3rem;
+}
+.dropdown-details {
+  font-family: "DM Sans", sans-serif;
+  margin-right: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 153.5%;
+  letter-spacing: -0.02em;
+  color: #586068;
+}
+.flex-this {
+  display: flex;
+  row-gap: 0;
+
+  transform: translateX(-1.8rem);
+}
+.complete-dropdown {
+  width: 529px;
+  height: 377px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+}
+.company {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 188%;
+  margin-left: 3.3rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.005em;
+  color: #abb0b4;
+}
+.about-us,
+.blogpost,
+.careers {
+  font-family: "DM Sans" sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+  display: flex;
+  letter-spacing: 0.005em;
+  color: #04111d;
+  margin-left: 3.3rem;
+}
+.about-us a {
+  padding: 0;
+}
