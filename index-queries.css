@@ -17,6 +17,9 @@
     height: 4rem;
     width: 4rem;
     margin-top: 5rem;
+    background: none;
+    border: none;
+    filter: invert(100%);
   }
   .close-button {
     display: none;
@@ -281,8 +284,12 @@
     display: block;
     height: 4rem;
     width: 4rem;
-    margin-top: 5rem;
+    background: none;
+    border: none;
+    filter: invert(100%);
+    filter: brightness(100%);
   }
+
   .close-button {
     display: none;
   }
@@ -349,9 +356,6 @@
   }
   .the-features {
     margin: 0;
-  }
-  .mobile-logo {
-    margin-top: 0;
   }
 
   .section-2-heading {
@@ -530,6 +534,9 @@
     height: 4rem;
     width: 4rem;
     margin-top: 5rem;
+    background: none;
+    border: none;
+    filter: invert(100%);
   }
   .close-button {
     display: none;
