@@ -32,6 +32,22 @@ nav {
   justify-content: space-between;
   padding-top: 5rem;
 }
+.navigations {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* MOBILE */
+.navigations a img {
+  margin-top: 5rem;
+  margin-right: 8rem;
+}
+.btn-mobile-nav {
+  display: none;
+}
+
 .company-logo {
   width: 104px;
   height: 36px;
@@ -50,8 +66,26 @@ nav {
 ul {
   display: flex;
   gap: 7.5rem;
-  padding-right: 40rem;
+  padding-right: 8rem;
 }
+
+.hover-about:hover {
+  transform: scale(1.2);
+  color: #00a4ff;
+}
+.flex-me {
+  transition: 300ms;
+}
+.flex-me:hover {
+  transform: scale(1.1);
+}
+.dropdown-details1 a {
+  transition: 300ms;
+}
+.color-change:hover {
+  color: #00a4ff;
+}
+
 li {
   list-style: none;
 
@@ -215,6 +249,7 @@ a {
 .grid-number-span {
   font-size: 1rem;
 }
+
 .grid-sub-heading {
   font-weight: 700;
   font-size: 3.2rem;
@@ -248,7 +283,7 @@ a {
   line-height: 188%;
   color: #586068;
 
-  margin-top: 2.4rem;
+  margin-top: 12rem;
 }
 .continue {
   font-size: 1.4rem;
@@ -643,11 +678,15 @@ h5 {
 .sec-section p a {
   color: #04111d;
   margin-top: 2rem;
-
+  transition: 400ms;
   text-decoration: none;
+  padding: 1.5rem;
 }
 .about-us a {
   padding: 0;
+}
+a {
+  cursor: pointer;
 }
 .sec-section {
   width: 196px;
@@ -656,4 +695,41 @@ h5 {
   top: 0px;
   padding: 2rem;
   background: #fafafa;
+}
+.why-kiru-img1 {
+  width: 40%;
+  object-fit: cover;
+}
+.why-kiru-img2 {
+  width: 50%;
+  object-fit: contain;
+}
+.nav-btn {
+  transition: 300ms;
+}
+.nav-btn:hover {
+  font-weight: 800;
+  transform: scale(1.1);
+  color: #f9f9f9;
+  background-color: #00a4ff;
+}
+.main-btn-1 {
+  transition: 300ms;
+}
+.main-btn-1:hover {
+  color: #00a4ff;
+  background-color: #fafafa;
+}
+.main-btn-2 {
+  transition: 300ms;
+}
+.main-btn-2:hover {
+  transform: scale(1.2);
+}
+li a {
+  transition: 300ms;
+}
+li a:hover {
+  color: #00a4ff;
+  font-weight: 700;
 }

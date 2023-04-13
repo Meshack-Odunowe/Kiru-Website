@@ -32,6 +32,21 @@ nav {
   justify-content: space-between;
   padding-top: 5rem;
 }
+.navigations {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* MOBILE */
+.navigations a img {
+  margin-top: 5rem;
+  margin-right: 8rem;
+}
+.btn-mobile-nav {
+  display: none;
+}
 .company-logo {
   width: 104px;
   height: 36px;
@@ -50,7 +65,23 @@ nav {
 ul {
   display: flex;
   gap: 7.5rem;
-  padding-right: 40rem;
+  padding-right: 8rem;
+}
+.hover-about:hover {
+  transform: scale(1.2);
+  color: #00a4ff;
+}
+.flex-me {
+  transition: 300ms;
+}
+.flex-me:hover {
+  transform: scale(1.1);
+}
+.dropdown-details1 a {
+  transition: 300ms;
+}
+.color-change:hover {
+  color: #00a4ff;
 }
 li {
   list-style: none;
@@ -151,7 +182,7 @@ a {
   width: 122.4rem;
   height: 56.7rem;
   margin-top: 4.5rem;
-  background-image: url("trusted clients/panell.svg");
+  background-image: url("trusted clients/vision-city.jpg");
 }
 .trans-text-bg {
   position: absolute;
@@ -195,7 +226,7 @@ a {
   height: 56.7rem;
   margin-top: 4.5rem;
   margin: 12.8rem 0;
-  background-image: url("trusted clients/beautiful.svg");
+  background-image: url("trusted clients/beautiful.jpg");
 }
 
 .bg2 {
@@ -230,7 +261,7 @@ a {
   left: 0px;
   top: 1390px;
   margin-bottom: 27.2rem;
-  background: url("trusted clients/kaguya resorts.svg");
+  background: url("trusted clients/the-kaguwa.jpg");
 }
 .trans-text-bg3 {
   position: absolute;
@@ -530,7 +561,8 @@ h5 {
 .sec-section p a {
   color: #04111d;
   margin-top: 2rem;
-
+  transition: 400ms;
+  padding: 1.5rem;
   text-decoration: none;
 }
 .about-us a {
@@ -543,4 +575,36 @@ h5 {
   top: 0px;
   padding: 2rem;
   background: #fafafa;
+}
+.nav-btn {
+  transition: 300ms;
+}
+.nav-btn:hover {
+  font-weight: 800;
+  transform: scale(1.1);
+  color: #f9f9f9;
+  background-color: #00a4ff;
+}
+.main-btn-1 {
+  transition: 300ms;
+}
+.main-btn-1:hover {
+  color: #00a4ff;
+  background-color: #fafafa;
+}
+.main-btn-2 {
+  transition: 300ms;
+}
+a {
+  cursor: pointer;
+}
+.main-btn-2:hover {
+  transform: scale(1.2);
+}
+li a {
+  transition: 300ms;
+}
+li a:hover {
+  color: #00a4ff;
+  font-weight: 700;
 }

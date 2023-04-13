@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="about-queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,87 +22,94 @@
   <body>
     <header>
       <div class="wrapper">
-        <nav>
-          <a href="index.html">
+        <div class="navigations">
+          <a href="index.html" class="mobile-logo">
+
             <img
-              src="trusted clients/black.svg"
-              alt="company-logo"
-              class="company-logo"
+            src="trusted clients/black.svg"
+            alt="company-logo"
+            class="company-logo"
             />
           </a>
-
-          <ul class="nav-lists">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li class="dropdown">
-              <a href="#">Learn</a>
-              <div class="dropdown-menu">
-                <div class="flex-this">
-                  <section class="complete-dropdown">
-                    <div class="flex-me">
-                      <img
-                        src="trusted clients/homepage-icon.svg"
-                        alt=""
-                        class="flex-image"
-                      />
-    
-                      <div>
-                        <h1 class="dropdown-details1">Why Kiru</h1>
-    
-                        <p class="dropdown-details">
-                          Find out why 200+ businesses and organisations people
-                          trust us as their sustainable energy partner
-                        </p>
+          <nav class="main-nav">
+           
+  
+            <ul class=" nav-links">
+              <li><a href="services.html" style="color:#04111D; "
+                >Services</a></li>
+              <li><a href="solutions.html" style="color:#04111D;
+                ;">Solutions</a></li>
+              <li><a href="project.html" style="color:#04111D;
+                ;">Projects</a></li>
+              <li class="dropdown">
+                <a href="#" style="color:#04111D;
+                ;">Learn</a>
+                <div class="dropdown-menu">
+                  <div class="flex-this">
+                    <section class="complete-dropdown">
+                      <div class="flex-me">
+                        <img
+                          src="trusted clients/homepage-icon.svg"
+                          alt=""
+                          class="flex-image"
+                        />
+      
+                        <div>
+                          <h1 class="dropdown-details1"><a href="whykiru.html " style="color: #333;font-weight: 700;">Why Kiru</a></h1>
+      
+                          <p class="dropdown-details">
+                            Find out why 200+ businesses and organisations people
+                            trust us as their sustainable energy partner
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="flex-me">
-                      <img
-                        src="trusted clients/homepage-icon.svg"
-                        alt=""
-                        class="flex-image"
-                      />
-    
-                      <div>
-                        <h1 class="dropdown-details1">FAQS</h1>
-    
-                        <p class="dropdown-details">Frequently asked questions</p>
+                      <div class="flex-me">
+                        <img
+                          src="trusted clients/homepage-icon.svg"
+                          alt=""
+                          class="flex-image"
+                        />
+      
+                        <div>
+                          <h1 class="dropdown-details1">FAQS</h1>
+      
+                          <p class="dropdown-details">Frequently asked questions</p>
+                        </div>
                       </div>
-                    </div>
-                  </section>
-                  <section class="sec-section">
-                    <p class="company">Company</p>
-                    <p class="about-us"><a href="about.html"> About Us</a></p>
-                    <p class="blogpost"><a href="blog.html">Blog</a></p>
-                    <p class="careers">Careers</p>
-                  </section>
+                    </section>
+                    <section class="sec-section">
+                      <p class="company">Company</p>
+                      <p class="about-us"><a href="about.html" class="hover-about"> About Us</a></p>
+                      <p class="blogpost"><a href="blog.html" class="hover-about">Blog</a></p>
+                      <p class="careers">Careers</p>
+                    </section>
+                  </div>
                 </div>
-              </div>
-            </li>
-            </li>
-            
-          </ul>
-          <button class="btn nav-btn">Contact Us</button>
-        </nav>
-        <div class="two-grid-header">
-          <div class="grid-text-left">
-            <p class="grid-sub-text">Our Mission</p>
-            <h1 class="grid-heading">
-              To power a new, prosperous and self-sustaining Africa.
-            </h1>
-            <p class="grid-main-text">
-              Kiru is a “clean-tech” company providing smart clean energy solutions for businesses and households in Africa. Our one mission is to power progress in Africa by making clean energy solutions readily accessible for businesses and households. 
-            </p>
-          </div>
-          <img
-            src="trusted clients/africa.webp"
-            alt=""
-            class="head-image"
-          />
-        </div>
-      </div>
-      </div>
+              </li>
+            </ul>
+            <button class="btn nav-btn">Contact Us</button>
+          </nav>
+          <button class="btn-mobile-nav">
+<img src="trusted clients/system-uicons_menu-hamburger.svg" alt="">          </button>
+<button class="close-button">
+  <ion-icon name="close-outline" class="icon-mobile-nav md hydrated" role="img" aria-label="close outline" class="menu-close-icon "></ion-icon>
 
+</button>
+        </div>
+
+          <div class="two-grid-header">
+            <div class="grid-text-left">
+              <p class="grid-sub-text">Our Mission</p>
+              <h1 class="grid-heading">
+                To power a new, prosperous and self-sustaining Africa.
+              </h1>
+              <h1 class="hidden-heading">Powering the African dream with clean energy.</h1>
+              <p class="grid-main-text">
+                Kiru is a “clean-tech” company providing smart clean energy solutions for businesses and households in Africa. Our one mission is to power progress in Africa by making clean energy solutions readily accessible for businesses and households. 
+              </p>
+            </div>
+            <img src="trusted clients/africa.webp" alt="">
+        </div>
     </header>
     <section>
       <div class="wrapper"><div class="flex-2-cols">
@@ -111,6 +119,7 @@
         <div class="flex-right">
           <p class="homes">Our Vision</p>
           <h3 class="heading-3">To be a leading multinational clean energy powerhouse</h3>
+          <h3 class="hidden-text">To power a new, prosperous and self-sustaining Africa. </h3>
           <p class="paragraph-2">
             We are building a future where everyone living and working in Africa <br> can have the infrastructure and the environment to make their own 
             <br> dreams come true.
@@ -128,7 +137,7 @@
         <div class="ceo">
           <div>
 
-            <img src="trusted clients/Chibunna_Ogbonna.svg" alt="ceo">
+            <img src="trusted clients/Chibunna_Ogbonna.jpg" alt="ceo">
             <p class="ceo-name">Chigbunna Ogbonna</p>
             <p class="role">Co founder & CEO
 
@@ -137,9 +146,9 @@
           </div>
           <div>
 
-            <img src="trusted clients/ben.svg" alt="ben">
+            <img src="trusted clients/ben.jpg" alt="ben">
             <p class="ceo-name">Ben Okpala</p>
-            <p class="role">Co founder & CEO
+            <p class="role"> Co founder & CIO
 
 
             </p>
@@ -172,6 +181,8 @@
     </section>
     <section class="history">
       <div class="wrapper">
+        <h3 class="story">Our Story</h3>
+        <p class="story-paragraph">At Kiru, we saw the future, felt it in our hearts and committed to making it a reality for the benefit of the African people. What began as an inspired idea in the privacy of a university lodge shaped our resolve to solve the energy challenges of the dynamic, resilient, creative and  industrious people of Africa. Having experienced these challenges first-hand, we understand the transformation that is possible with innovative sustainable solutions. Come with us on this journey to power the African dream with clean energy.</p>
         <div class="evolution">
           <p class="story-heading">February 2017</p>
           <p class="story-title">The Conception</p>

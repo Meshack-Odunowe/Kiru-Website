@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="project-queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,81 +25,99 @@
   <body>
     <header>
       <div class="wrapper">
-        <nav>
-          <a href="index.html">
+        <div class="navigations">
+          <a href="index.html" class="mobile-logo">
+
             <img
-              src="trusted clients/black.svg"
-              alt="company-logo"
-              class="company-logo"
+            src="trusted clients/black.svg"
+            alt="company-logo"
+            class="company-logo"
             />
           </a>
-
-          <ul class="nav-lists">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li class="dropdown">
-              <a href="#">Learn</a>
-              <div class="dropdown-menu">
-                <div class="flex-this">
-                  <section class="complete-dropdown">
-                    <div class="flex-me">
-                      <img
-                        src="trusted clients/homepage-icon.svg"
-                        alt=""
-                        class="flex-image"
-                      />
-    
-                      <div>
-                        <h1 class="dropdown-details1">Why Kiru</h1>
-    
-                        <p class="dropdown-details">
-                          Find out why 200+ businesses and organisations people
-                          trust us as their sustainable energy partner
-                        </p>
+          <nav class="main-nav">
+           
+  
+            <ul class=" nav-links">
+              <li><a href="services.html" style="color:#04111D; "
+                >Services</a></li>
+              <li><a href="solutions.html" style="color:#04111D;
+                ;">Solutions</a></li>
+              <li><a href="project.html" style="color:#04111D;
+                ;">Projects</a></li>
+              <li class="dropdown">
+                <a href="#" style="color:#04111D;
+                ;">Learn</a>
+                <div class="dropdown-menu">
+                  <div class="flex-this">
+                    <section class="complete-dropdown">
+                      <div class="flex-me">
+                        <img
+                          src="trusted clients/homepage-icon.svg"
+                          alt=""
+                          class="flex-image"
+                        />
+      
+                        <div>
+                          <h1 class="dropdown-details1"><a href="whykiru.html " style="color: #333;font-weight: 700;">Why Kiru</a></h1>
+      
+                          <p class="dropdown-details">
+                            Find out why 200+ businesses and organisations people
+                            trust us as their sustainable energy partner
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="flex-me">
-                      <img
-                        src="trusted clients/homepage-icon.svg"
-                        alt=""
-                        class="flex-image"
-                      />
-    
-                      <div>
-                        <h1 class="dropdown-details1">FAQS</h1>
-    
-                        <p class="dropdown-details">Frequently asked questions</p>
+                      <div class="flex-me">
+                        <img
+                          src="trusted clients/homepage-icon.svg"
+                          alt=""
+                          class="flex-image"
+                        />
+      
+                        <div>
+                          <h1 class="dropdown-details1">FAQS</h1>
+      
+                          <p class="dropdown-details">Frequently asked questions</p>
+                        </div>
                       </div>
-                    </div>
-                  </section>
-                  <section class="sec-section">
-                    <p class="company">Company</p>
-                    <p class="about-us"><a href="about.html"> About Us</a></p>
-                    <p class="blogpost"><a href="blog.html">Blog</a></p>
-                    <p class="careers">Careers</p>
-                  </section>
+                    </section>
+                    <section class="sec-section">
+                      <p class="company">Company</p>
+                      <p class="about-us"><a href="about.html" class="hover-about"> About Us</a></p>
+                      <p class="blogpost"><a href="blog.html" class="hover-about">Blog</a></p>
+                      <p class="careers">Careers</p>
+                    </section>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <button class="btn nav-btn">Contact Us</button>
-        </nav>
-        <div class="two-grid-header">
-          <div class="grid-text-left">
-            <p class="grid-sub-text">PROJECTS</p>
-            <h1 class="grid-heading">
-              The Quest for Innovation and Excellence.
-            </h1>
-            <p class="grid-main-text">
-              Our insatiable thirst for innovation and excellence drives us to
-              imagine, develop and execute out-of-the-box projects advancing
-              clean energy adoption in Africa. We invite you to experience all
-              our future proof projects
-            </p>
+              </li>
+            </ul>
+            <button class="btn nav-btn">Contact Us</button>
+          </nav>
+          <button class="btn-mobile-nav">
+<img src="trusted clients/system-uicons_menu-hamburger.svg" alt="">          </button>
+<button class="close-button">
+  <ion-icon name="close-outline" class="icon-mobile-nav md hydrated" role="img" aria-label="close outline" class="menu-close-icon "></ion-icon>
+
+</button>
+        </div>
+
+          <div class="two-grid-header">
+            <div class="grid-text-left">
+              <p class="grid-sub-text">Projects</p>
+              <h1 class="grid-heading">
+                The Quest for Innovation and Excellence.
+              </h1>
+              <p class="grid-main-text">
+                Our insatiable thirst for innovation and excellence drives us to imagine, develop and execute out-of-the-box projects advancing clean energy adoption in Africa. We invite you to experience all our future proof projects 
+              </p>
+            </div>
+            <!-- <img
+            src="trusted clients/services page.webp"
+            alt=""
+            class="head-image"
+            /> -->
           </div>
         </div>
-      </header>
+    </header>
       <section>
         <div class="wrapper">
 
@@ -108,7 +127,7 @@
             <li><a href="#">All</a></li>
             <li><a href="#">Minigrid</a></li>
             <li><a href="#">Commercial</a></li>
-            <li><a href="#">Industrial</a></li>
+            <li><a href="#" class="sublists-lastchild">Industrial</a></li>
           </ul>
           <div class="trans-bg"></div>
           <div class="trans-text-bg">

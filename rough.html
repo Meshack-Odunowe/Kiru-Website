@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+
+      .topnav #myLinks {
+        display: none;
+      }
+
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .active {
+        background-color: #04aa6d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    Simulate a smartphone / tablet
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home" class="active"
+          ><img src="trusted clients/kiru-mainlogo.svg" alt=""
+        /></a>
+        <div id="myLinks">
+          <a href="#news">Services</a>
+          <a href="#contact">Solutions</a>
+          <a href="#about">Projects</a>
+          <a href="#about">Learn</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div style="padding-left: 16px">
+        <h3>Vertical Mobile Navbar</h3>
+        <p>
+          This example demonstrates how a navigation menu on a mobile/smart
+          phone could look like.
+        </p>
+        <p>
+          Click on the hamburger menu (three bars) in the top right corner, to
+          toggle the menu.
+        </p>
+      </div>
+    </div>
+    <header>
+      <div class="wrapper">
+        <div class="navigations">
+          <a href="index.html" class="mobile-logo">
+            <img
+              src="trusted clients/black.svg"
+              alt="company-logo"
+              class="company-logo"
+            />
+          </a>
+          <nav class="main-nav">
+            <ul class="nav-links">
+              <li>
+                <a href="services.html" style="color: #04111d">Services</a>
+              </li>
+              <li>
+                <a href="solutions.html" style="color: #04111d">Solutions</a>
+              </li>
+              <li>
+                <a href="project.html" style="color: #04111d">Projects</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" style="color: #04111d">Learn</a>
+                <div class="dropdown-menu">
+                  <div class="flex-this">
+                    <section class="complete-dropdown">
+                      <div class="flex-me">
+                        <img
+                          src="trusted clients/homepage-icon.svg"
+                          alt=""
+                          class="flex-image"
+                        />
+
+                        <div>
+                          <h1 class="dropdown-details1">
+                            <a
+                              href="whykiru.html "
+                              style="color: #333; font-weight: 700"
+                              >Why Kiru</a
+                            >
+                          </h1>
+
+                          <p class="dropdown-details">
+                            Find out why 200+ businesses and organisations
+                            people trust us as their sustainable energy partner
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex-me">
+                        <img
+                          src="trusted clients/homepage-icon.svg"
+                          alt=""
+                          class="flex-image"
+                        />
+
+                        <div>
+                          <h1 class="dropdown-details1">FAQS</h1>
+
+                          <p class="dropdown-details">
+                            Frequently asked questions
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="sec-section">
+                      <p class="company">Company</p>
+                      <p class="about-us">
+                        <a href="about.html" class="hover-about"> About Us</a>
+                      </p>
+                      <p class="blogpost">
+                        <a href="blog.html" class="hover-about">Blog</a>
+                      </p>
+                      <p class="careers">Careers</p>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="btn nav-btn">Contact Us</button>
+          </nav>
+          <button class="btn-mobile-nav">
+            <img
+              src="trusted clients/system-uicons_menu-hamburger.svg"
+              alt=""
+            />
+          </button>
+          <button class="close-button">
+            <ion-icon
+              name="close-outline"
+              class="icon-mobile-nav md hydrated"
+              role="img"
+              aria-label="close outline"
+              class="menu-close-icon"
+            ></ion-icon>
+          </button>
+        </div>
+
+        <div class="two-grid-header">
+          <div class="grid-text-left">
+            <p class="grid-sub-text">Services</p>
+            <h1 class="grid-heading">
+              Expert team for high-quality solar system design and installation
+            </h1>
+            <p class="grid-main-text">
+              We offer services ranging from site assessment to system design,
+              installation, and maintenance, we provide end-to-end solutions
+              tailored to your specific needs
+            </p>
+          </div>
+          <img
+            src="trusted clients/services page.webp"
+            alt=""
+            class="head-image"
+          />
+          <p class="image-caption">Powering Manufacturing</p>
+        </div>
+      </div>
+    </header>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
